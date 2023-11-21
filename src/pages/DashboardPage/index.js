@@ -8,8 +8,10 @@ export default function DashboardPage() {
 
   let [personagens, setPersonagens] = useState([]);
 
+  const baseURL = 'https://swapi.dev/api'
+
   RequestApi(function(){
-    fetch('https://swapi.dev/api/people/1')
+    fetch(baseURL)
       .then(data => data.json())
       .then(objeto => {
         console.log(objeto);
@@ -28,34 +30,10 @@ export default function DashboardPage() {
     <View style={styles.GlobalContainer}>
       <View style={styles.MainContainer}>
         <RoundedCard 
-          title={'Tela de Cadastro'} 
-          coop={'Bianca Brumatti'} 
-          rating={'4.5'} 
-          coopImage={require('../../assets/ProfilePictureBianca.png')} 
-        />
-        <RoundedCard 
-          title={'Portifólio'} 
-          coop={'Caio Braga'} 
-          rating={'4'} 
-          coopImage={require('../../assets/ProfilePictureCaio.png')} 
-        />
-        <RoundedCard 
-          title={'Catálogo de Filmes'} 
-          coop={'Giselle Souza'} 
-          rating={'5'} 
-          coopImage={require('../../assets/ProfilePictureGiselle.png')} 
-        />
-        <RoundedCard 
-          title={'Tela de Login'} 
-          coop={'Bianca Brumatti'} 
-          rating={'5'} 
-          coopImage={require('../../assets/ProfilePictureBianca.png')} 
-        />
-        <RoundedCard 
-          title={'Instagram'} 
-          coop={'Caio Braga'} 
-          rating={'5'} 
-          coopImage={require('../../assets/ProfilePictureCaio.png')} 
+          name={''} 
+          altura={''} 
+          peso={''} 
+          cabelo={''} 
         />
       </View>
     </View>
