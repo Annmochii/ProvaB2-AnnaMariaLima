@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import DashboardPage from './pages/DashboardPage/index.js';
 
 const Stack = createNativeStackNavigator();
 
