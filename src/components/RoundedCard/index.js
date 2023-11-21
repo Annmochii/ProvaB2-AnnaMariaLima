@@ -5,12 +5,11 @@ export function RoundedCard(props){
     const styles = StyleSheet.create({
         RoundedCard:{
             width: '100%',
-            height: 92,
+            height: 112,
             borderRadius: 28,
             backgroundColor: '#F7F7F7',
             paddingInline: 24,
             paddingBlock: 16,
-            alignItems: 'center',
             flexDirection: 'column',
             justifyContent: 'start',
             gap: 0,
@@ -35,7 +34,7 @@ export function RoundedCard(props){
                 <Text style={styles.Name}>{props.name}</Text>
                 <Text style={styles.Info}>Height: {props.altura}</Text>
                 <Text style={styles.Info}>Mass: {props.peso}</Text>
-                <Text style={styles.Info}>Hair Color: {props.peso}</Text>
+                <Text style={styles.Info}>Hair Color: {props.cabelo}</Text>
         </View>
     )
 }

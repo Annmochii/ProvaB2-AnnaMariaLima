@@ -9,14 +9,14 @@ export default function DashboardPage() {
 
   let [personagens, setPersonagens] = useState([]);
 
-  const baseURL = 'https://swapi.dev/api'
+  const baseURL = 'https://swapi.dev/api/people'
 
   useEffect(function(){
     fetch(baseURL)
       .then(data => data.json())
       .then(objeto => {
         console.log(objeto);
-        setPersonagens(objeto.data);
+        setPersonagens(objeto.results);
       })
   }, []);
 

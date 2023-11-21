@@ -46,8 +46,8 @@ const styles = StyleSheet.create({
   },
   Text: {
     fontFamily: 'PoppinsBold',
-    fontSize: '32px',
-    color: '#F7F7F7',
+    fontSize: '16px',
+    color: '#26262B',
   },
 });
 
